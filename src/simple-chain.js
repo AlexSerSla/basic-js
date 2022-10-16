@@ -40,8 +40,10 @@ const { NotImplementedError } = require('../extensions/index.js');
   finishChain() {
     //throw new NotImplementedError('Not implemented');
     // remove line with error and write your code here
-    console.log(this.chain.join('~~'));
+    //console.log(this.chain.join('~~'));
+    const resString = this.chain.join('~~');
     this.chain = [];
+    return resString;
   }
 };
 
