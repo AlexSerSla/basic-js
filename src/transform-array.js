@@ -17,7 +17,7 @@ const { NotImplementedError } = require('../extensions/index.js');
   //throw new NotImplementedError('Not implemented');
   // remove line with error and write your code here
   if (Array.isArray(arr) === false) {
-    throw new Error("You can't remove incorrect link!");
+    throw new Error("'arr' parameter must be an instance of the Array!");
   }
 
   let posSlice = 0;
