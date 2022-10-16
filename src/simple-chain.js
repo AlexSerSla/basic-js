@@ -25,6 +25,7 @@ const { NotImplementedError } = require('../extensions/index.js');
     //throw new NotImplementedError('Not implemented');
     // remove line with error and write your code here
     if ((position > this.chain.length) || (position < 1) || (typeof position !== 'number')) {
+      this.chain = [];
       throw new Error("You can't remove incorrect link!");
     } else {
       this.chain.splice(position - 1, 1);
